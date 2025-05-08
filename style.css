@@ -50,14 +50,14 @@ body {
 }
 
 .role {
-  font-weight: 600;
+  font-weight: 400;
   color: var(--accent);
   margin-bottom: 0.5rem;
 }
 
 .name {
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 500;
   margin: 0.2rem 0;
 }
 
@@ -95,7 +95,7 @@ body {
   color: var(--primary);
   font-size: 0.85rem;
   padding: 0.4rem 0.8rem;
-  border-radius: 12px;
+  border-radius: 9px;
   transition: all var(--transition);
 }
 
