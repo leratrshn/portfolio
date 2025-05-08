@@ -1,0 +1,46 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background: #ffffff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  padding: 2rem;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: #666;
+  text-decoration: none;
+}
+
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.projects {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+}
+
+.project img {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.project h3 {
+  margin-top: 0.5rem;
+}
+
+a {
+  color: #333;
+}
