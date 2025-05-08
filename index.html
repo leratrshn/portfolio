@@ -8,40 +8,54 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <section class="about">
-    <img src="assets/avatar.jpg" alt="Фото Валерии" class="avatar">
+  <main class="container">
+    <section class="about">
+      <img src="assets/avatar.jpg" alt="Фото Валерии Трошиной" class="avatar">
 
-    <div class="info">
-      <div class="top">
-        <div>
-          <div class="role">Дизайнер интерфейсов</div>
+      <div class="info">
+        <header class="top">
+          <div class="header-text">
+            <span class="role">Дизайнер интерфейсов</span>
+            <h1 class="name">Валерия Трошина</h1>
+            <span class="handle">@leratrshn</span>
+          </div>
+          <div class="contacts">
+            <a href="tel:+79035069059">+7 903 506-90-59</a>
+            <a href="mailto:valeriya.trshn@mail.ru">valeriya.trshn@mail.ru</a>
+          </div>
+        </header>
+
+        <div class="skills">
+          <div class="tags">
+            <span>figma</span>
+            <span>photoshop</span>
+            <span>illustrator</span>
+            <span>анализ данных</span>
+            <span>основы HTML и CSS</span>
+            <span>разработка прототипов</span>
+            <span>планирование задач</span>
+            <span>ретушь фотографий</span>
+          </div>
         </div>
-        <div>
-          <div class="name">Валерия Трошина</div>
-          <div class="handle">@leratrshn</div>
-        </div>
-        <div class="contacts">
-          <div>+7 903 506-90-59</div>
-          <div><a href="mailto:valeriya.trshn@mail.ru">valeriya.trshn@mail.ru</a></div>
+
+        <p class="desc">
+          Последние 2 года проектирую интерфейсы, работаю над веб-проектами, анализирую, отслеживаю путь и взаимодействие пользователя.
+        </p>
+
+        <div class="actions">
+          <a href="#portfolio" class="button">Мои работы</a>
+          <a href="resume.pdf" download class="button secondary">Скачать резюме</a>
         </div>
       </div>
+    </section>
 
-      <div class="tags">
-        <span>figma</span>
-        <span>photoshop</span>
-        <span>illustrator</span>
-        <span>анализ данных</span>
-        <span>основы HTML и CSS</span>
-        <span>разработка и адаптация прототипов</span>
-        <span>планирование задач</span>
-        <span>контроль и отслеживание</span>
-        <span>ретушь фотографий</span>
+    <!-- Пример секции "Портфолио" -->
+    <section id="portfolio" class="portfolio">
+      <h2>Портфолио</h2>
+      <div class="projects">
+        <!-- Здесь будут карточки работ -->
       </div>
-
-      <p class="desc">
-        Последние 2 года проектирую интерфейсы, работаю над веб-проектами, анализирую, отслеживаю путь и взаимодействие пользователя
-      </p>
-    </div>
-  </section>
+    </section>
+  </main>
 </body>
 </html>
