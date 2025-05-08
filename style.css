@@ -1,4 +1,3 @@
-/* Обновленный header с вашими переменными */
 .portfolio-header {
   max-width: 600px;
   margin: 2rem auto;
@@ -15,7 +14,6 @@
   gap: 1.5rem;
 }
 
-/* Текстовые блоки */
 .title-block {
   text-align: center;
 }
@@ -40,7 +38,6 @@
   margin-top: 0.5rem;
 }
 
-/* Контакты */
 .contacts-block {
   display: flex;
   justify-content: center;
@@ -56,7 +53,6 @@
   color: var(--secondary);
 }
 
-/* Навыки с обводкой */
 .skills-block {
   display: flex;
   justify-content: center;
@@ -81,7 +77,6 @@
   transform: translateY(-2px);
 }
 
-/* Адаптивность */
 @media (max-width: 768px) {
   .portfolio-header {
     padding: 1.5rem;
