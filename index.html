@@ -3,59 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Валерия Трошина — UI-дизайнер</title>
+  <title>Валерия Трошина — UI/UX дизайнер</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <main class="container">
-    <section class="about">
-      <img src="assets/avatar.jpg" alt="Фото Валерии Трошиной" class="avatar">
+  <div class="container">
+    <header class="header">
+      <div class="header-content">
+        <h1 class="name">Валерия Трошина</h1>
+        <p class="role">UI/UX дизайнер</p>
+        <p class="contact">@leratrshn · +7 903 506-90-59 · valeriya.trshn@mail.ru</p>
+      </div>
+    </header>
 
-      <div class="info">
-        <header class="top">
-          <div class="header-text">
-            <span class="role">Дизайнер интерфейсов</span>
-            <h1 class="name">Валерия Трошина</h1>
-            <span class="handle">@leratrshn</span>
-          </div>
-          <div class="contacts">
-            <a href="tel:+79035069059">+7 903 506-90-59</a>
-            <a href="mailto:valeriya.trshn@mail.ru">valeriya.trshn@mail.ru</a>
-          </div>
-        </header>
-
+    <main class="content">
+      <section class="about">
         <div class="skills">
-          <div class="tags">
-            <span>figma</span>
-            <span>photoshop</span>
-            <span>illustrator</span>
-            <span>анализ данных</span>
-            <span>основы HTML и CSS</span>
-            <span>разработка прототипов</span>
-            <span>планирование задач</span>
-            <span>ретушь фотографий</span>
+          <span class="skill-tag">figma</span>
+          <span class="skill-tag">photoshop</span>
+          <span class="skill-tag">illustrator</span>
+          <span class="skill-tag">анализ данных</span>
+          <span class="skill-tag">HTML/CSS</span>
+          <span class="skill-tag">разработка прототипов</span>
+        </div>
+
+        <p class="description">
+         Уже более 3 лет работаю над тем, чтобы визуальные решения были не только красивыми, но и удобными для пользователя.
+
+         Активно участвую в анализе и оптимизации пользовательских сценариев, проектирую макеты и слежу за реализацией дизайна в продакшене.
+        </p>
+      </section>
+
+      <section class="portfolio">
+        <h2 class="section-title">Портфолио</h2>
+        
+        <div class="projects-grid">
+          <!-- Проект 1 -->
+          <div class="project-card">
+            <div class="project-image-wrapper">
+              <img src="assets/project1.jpg" alt="Дизайн корзины" class="project-image">
+              <div class="project-overlay">
+                <button class="view-button">Просмотреть проект</button>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Редизайн корзины</h3>
+              <p>Интернет-магазин лабораторного оборудования</p>
+              <div class="project-tags">
+                <span>UI Design</span>
+                <span>UX Research</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Проект 2 -->
+          <div class="project-card">
+            <div class="project-image-wrapper">
+              <img src="assets/project2.jpg" alt="Дизайн приложения" class="project-image">
+              <div class="project-overlay">
+                <button class="view-button">Просмотреть проект</button>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Мобильное приложение</h3>
+              <p>FinTech сервис для инвестиций</p>
+              <div class="project-tags">
+                <span>Mobile UI</span>
+                <span>Prototyping</span>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
+    </main>
+  </div>
 
-        <p class="desc">
-          Последние 2 года проектирую интерфейсы, работаю над веб-проектами, анализирую, отслеживаю путь и взаимодействие пользователя.
-        </p>
-
-        <div class="actions">
-          <a href="#portfolio" class="button">Мои работы</a>
-          <a href="resume.pdf" download class="button secondary">Скачать резюме</a>
-        </div>
+  <!-- Модальное окно -->
+  <div class="modal" id="project-modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <img src="" alt="" class="modal-image" id="modal-image">
+      <div class="modal-info">
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
       </div>
-    </section>
+    </div>
+  </div>
 
-    <!-- Пример секции "Портфолио" -->
-    <section id="portfolio" class="portfolio">
-      <h2>Портфолио</h2>
-      <div class="projects">
-        <!-- Здесь будут карточки работ -->
-      </div>
-    </section>
-  </main>
+  <script src="script.js"></script>
 </body>
 </html>
